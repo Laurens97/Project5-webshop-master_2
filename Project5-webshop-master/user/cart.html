@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 5 | Cart</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../includes/css/cart.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav_container">
+            <ul id="menu-menu-1" class="mainnav">
+                <li id="menu-item-1" class="menu-item-1"><a href="../user/index.html">Home</a></li>
+                <li id="menu-item-2" class="menu-item-2"><a href="../user/shop.html">Shop</a></li>
+                <li id="menu-item-3" class="menu-item-3"><a href="../user/wishlist.html">Wishlist</a></li>
+                <li id="menu-item-4" class="menu-item-4"><a href="../user/myaccount.html">My Account</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="padded">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-20 col-lg-offset-2">
+
+                    <h2 class="line">Cart</h2>
+                    <div class="woocommerce">
+                        <div class="woocommerce-message">... is added to your cart.</div>
+                        <div class="shop-controls clearfix">
+                            <a href="..." class="button wc-forward">
+                                <input type="submit" class="button" name="update_cart" value="Check cart" /></a>
+                            <a class="carttotal custom regular" href="...">
+                                <input type="submit" class="button" name="update_cart" value="Back to shop" /></a>
+                        </div>
+                        <form action="cart" method="post">
+
+
+                            <table class="shop_table_cart" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th class="product-remove">&nbsp;</th>
+                                        <th class="product-thumbnail">&nbsp;</th>
+                                        <th class="product-name">Product</th>
+                                        <th class="product-price">Price</th>
+                                        <th class="product-quantity">Amount</th>
+                                        <th class="product-subtotal">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr class="cart_item">
+                                        <td class="product-remove">
+                                        <td class="product-thumbnail">
+                                        <td class="product-name"></td>
+                                        <td class="product-price">
+                                            <span class="amount">&euro;4,20</span>					
+                                        </td>
+                                        <td class="product-quantity">
+                                            <div class="quantity">
+                                                <input type="number" step="1" min="0" max="10" name="cart" value="1" title="Amount" class="input-text qty text" size="4" /></div>
+                                        </td>
+                                        <td class="product-subtotal">
+                                            <span class="amount">&euro;4,20</span>					
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="actions">
+
+                                <a href="../user/checkout.html" class="checkout-button button alt wc-forward">
+                                    
+                                    <input type="submit" class="checkout-button button alt wc-forward" name="proceed" value="Proceed to checkout" /></a>
+                                    <input type="submit" class="button" name="update_cart" value="Edit cart" />
+
+                            </div>
+                        </form>
+
+                        <div class="cart_totals ">
+
+                            <h2>Cart-totals</h2>
+
+                            <table cellspacing="0">
+
+                                <tr class="cart-subtotal">
+                                    <th>Subtotal</th>
+                                    <td><span class="amount">&euro;4,20</span></td>
+                                </tr>
+                                <tr class="order-total">
+                                    <th>Total</th>
+                                    <td><span class="amount">&euro;4,20</span></td>
+                                </tr>
+                            </table>
+
+                            <div class="checkout">
+
+                                <a href="../user/checkout.html" class="checkout-button">
+                                    <input type="submit" class="checkout-button button alt wc-forward" name="proceed" value="Proceed to checkout" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <p>Project 5-6 Group 5</p>
+    </footer>
+</body>
+</html>
